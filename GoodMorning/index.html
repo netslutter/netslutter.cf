@@ -12,11 +12,42 @@
 			document.getElementsByTagName("body")[0].appendChild(script);
 		});
 	</script>
+	<script src="./confetti.js"></script>
+	<script>
+
+	function ashConfetti() {
+		//startConfetti();
+		//window.open("https://www.youtube.com/watch?v=uC1iJcYOyeY");
+		const startit = () => {
+        setTimeout(function () {
+          console.log("start");
+          startConfetti();
+        }, 1);
+      };
+
+      const stopit = () => {
+        setTimeout(function () {
+          console.log("stop");
+          stopConfetti();
+        }, 3000);
+      };
+	  const webRedirect = () => {
+        setTimeout(function () {
+          console.log("web redirect");
+		  window.open("https://www.youtube.com/watch?v=uC1iJcYOyeY");
+        }, 3000);
+      };
+	  startit();
+      stopit();
+	  webRedirect();
+	}
+
+	</script>
 	
 	<body>
 		<div class="window" id="about">
 			<div class="title-bar" id="about-bar">
-				<div class="title-bar-text">This Ash</div>
+				<div class="title-bar-text">This is Ash</div>
 				<div class="title-bar-controls">
 					<button aria-label="Minimize"></button>
 					<button aria-label="Maximize"></button>
@@ -27,11 +58,10 @@
 				Hi, Kiddo, A very Good Morning to you ❤️
 				<br />
 				<br />
-				Hope this day gonna be very Productive...</a>.
+				Hope this day gonna be very Productive, & I LOVE YOU ❤️❤️❤️❤️</a>.
 				<br />
 				<br />
-	
-				Now Click here &nbsp;<a href="https://www.youtube.com/watch?v=uC1iJcYOyeY">blog</a>.
+				<button onclick="ashConfetti();">Now Click here.</button>
 			</div>
 		</div>
 	</body>
