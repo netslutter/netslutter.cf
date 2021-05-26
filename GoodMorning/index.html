@@ -16,8 +16,6 @@
 	<script>
 
 	function ashConfetti() {
-		//startConfetti();
-		//window.open("https://www.youtube.com/watch?v=uC1iJcYOyeY");
 		const startit = () => {
         setTimeout(function () {
           console.log("start");
@@ -35,6 +33,8 @@
         setTimeout(function () {
           console.log("web redirect");
 		  alert("Nice you noticed..\nNow Playing a song dedicated to you");
+		  //window.location.replace("https://www.youtube.com/watch?v=uC1iJcYOyeY");
+		  window.open("https://www.youtube.com/watch?v=uC1iJcYOyeY");
 		  window.location.replace("https://www.youtube.com/watch?v=uC1iJcYOyeY");
         }, 2000);
       };
