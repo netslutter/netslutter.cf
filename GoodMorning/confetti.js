@@ -29,12 +29,8 @@ var removeConfetti;
     function startConfettiInner() {
         var width = window.innerWidth;
         var height = window.innerHeight;
-        console.log(width);
-        console.log(height);
         width = width - 180;
         height = height - 50;
-        console.log(height);
-        console.log(width);
                 
         window.requestAnimFrame = (function() {
             return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
