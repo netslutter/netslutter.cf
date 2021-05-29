@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A GIFT FOR YOU</title>
+
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="scratch.css">
+    <style>
+        .card {
+            width: 300px;
+            height: 80px;
+            position: relative;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+        }
+
+        .base,
+        #scratch {
+            cursor: default;
+            height: 80px;
+            width: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: grabbing;
+        }
+
+        .base {
+            line-height: 80px;
+            text-align: center;
+        }
+
+        #scratch {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="base">Coupon Code: 123456789</div>
+        <canvas id="scratch" width="300" height="60"></canvas>
+    </div>
+
+    <script src="scratch-card.js"></script>
+</body>
+
+</html>
