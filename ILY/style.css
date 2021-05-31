@@ -1,0 +1,102 @@
+.container-fluid h1 {
+    color: black;
+}
+
+.row {
+    /* border: 1px red solid; */
+    height: 7.13vh;
+}
+
+.row1 {
+    animation: slideDown 7s;
+}
+
+.row2 {
+    animation: slideDown 7s;
+}
+
+.row3 {
+    animation: slideDown 7s;
+}
+
+.row4 {
+    animation: slideDown 7s;
+}
+
+.row5 {
+    animation: slideDown 5s;
+}
+
+.row6 {
+    animation: slideDown 5s;
+}
+
+.row7 {
+    animation: slideDown 3s;
+}
+
+.row8 {
+    animation: slideDown 2s;
+}
+
+.row9 {
+    animation: slideDown 1s;
+}
+
+.col {
+    /* border: 1px blue solid; */
+}
+
+.special {
+    background-color: red;
+}
+
+body {
+    overflow: hidden;
+}
+
+.hb {
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 10s;
+}
+
+.letters {
+    animation-name: opacity;
+    animation-duration: 7s;
+}
+
+@keyframes opacity {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        background-color: transparent;
+        
+    }
+    to {
+        background: url(Images/red.jpg) no-repeat center; 
+        background-size: cover;
+    }
+}
