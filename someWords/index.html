@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Listen to me..</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="js/confetti.js"></script>
+    <script type="text/javascript">
+	function ashConfetti() {
+		const startit = () => {
+			setTimeout(function () {
+				console.log("start");
+				startConfetti();
+			}, 1);
+		};
+
+		const stopit = () => {
+			setTimeout(function () {
+				console.log("stop");
+				stopConfetti();
+			}, 1500);
+		};
+		const webRedirect = () => {
+			setTimeout(function () {
+				console.log("web redirect");
+				window.open("https://ashwini.codes/ILY/", "_self");
+			}, 2000);
+		};
+		startit();
+		stopit();
+		webRedirect();
+	}
+    </script>
+</head>
+
+<body>
+    <!-- START CONTENT  -->
+    <p id="link-to"><button id="myButton" class="big-button" onclick=" ashConfetti()" >Take me there </button><a target="_blank" href="https://google.com">💝</a></p>
+    <div class="player">
+        <div class="player__bar">
+            <div class="player__album">
+                <div class="player__albumImg active-song" data-author="Ashwin" data-song="I'm Your's" data
+                    data-src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_2MG.mp3"
+                    style="background-image: url(img/a.jpg)">
+                </div>
+                <div class="player__albumImg" data-author="Ashwin" data-song="And U R Mine" data
+                    data-src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_2MG.mp3"
+                    style="background-image: url(img/album.png)">
+                </div>
+            </div>
+            <div class="player__controls">
+
+                <div class="player__prev">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+
+                <div class="player__play">
+                    <svg class="icon play">
+                        <use xlink:href="img/sprite.svg#play"></use>
+                    </svg>
+                    <svg class="icon pause">
+                        <use xlink:href="img/sprite.svg#pause"></use>
+                    </svg>
+                </div>
+
+                <div class="player__next">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="player__timeline">
+            <p class="player__author"></p>
+            <p class="player__song"></p>
+            <div class="player__timelineBar">
+                <div id="playhead"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTENT  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

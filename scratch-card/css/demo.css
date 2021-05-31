@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{ margin: 0; padding: 0;}
 body{
   font-family: 'Roboto', sans-serif;
@@ -15,7 +16,7 @@ h4{
    text-align: center;
 }
 .intro{
-   background: #fff;
+   background: #EEEEEE;
    padding: 60px 30px;
    color: #333;
    margin-bottom: 15px;

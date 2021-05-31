@@ -17,7 +17,7 @@
   // fill circle
   context.beginPath();
   context.fillStyle = '#515151';
-  context.rect(0, 0, 300, 60);
+  context.rect(0, 0, 450, 70);
   context.fill();
 
   //----------------------------------------------------------------------------
